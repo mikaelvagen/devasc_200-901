@@ -1,7 +1,6 @@
 import os
 import json
 import requests
-from pprint import pprint
 
 class MerakiNetworkDevices():
 
@@ -64,6 +63,6 @@ if __name__ == '__main__':
             if key in filter: d[key] = val
         formatted_devices.append(d)
     print('='*120)
-    print(f'Network device list for network {net_ID} in organization {organizations[2]["name"]}:\n')
+    print(f'Device list for network {net_ID} in organization {organizations[2]["name"]}:\n')
     for device in formatted_devices: print(device)
     print('='*120)
