@@ -1,7 +1,6 @@
 import os
 import json
 import meraki
-from pprint import pprint
 
 def get_ID(item:dict):
     """ Returns ID-field of dict-item """
